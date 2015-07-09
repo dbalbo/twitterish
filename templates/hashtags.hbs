@@ -1,0 +1,15 @@
+<h3>Find a tweet by hashtag '#'</h3>
+
+<form>
+  <div class="form-group">
+    <label for="hashtag">Hashtag:</label>
+    {{input id="hashtag" class="form-control" value=hashtag}}
+  </div>
+    <button class="btn btn-primary" {{action 'findHashTags'}}>Search Now!</button>
+</form>
+<br>
+<ul>
+  {{#each returnTweets as |tweet|}}
+  <li>{{#link-to 'tweet' tweet.id}}{{tweet.text}} --- {{tweet.time}}{{/link-to}}</li>
+  {{/each}}
+</ul>

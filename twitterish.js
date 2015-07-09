@@ -1,0 +1,3 @@
+Twitterish = Ember.Application.create ({
+
+});

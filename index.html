@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Twitterish</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href='css/styles.css' type="text">
+
+    <script src="libs/jquery-1.11.3.js"></script>
+
+    <script src="libs/ember-template-compiler-1.10.0.js"></script>
+    <script src="libs/ember-1.10.0.debug.js"></script>
+    <script src="libs/ember-handlebars-loader-0.0.2.js"></script>
+
+    <script src='twitterish.js'></script>
+    <script src='router.js'></script>
+    <script src='store.js'></script>
+
+    <script src='controllers/tweets.js'></script>
+    <script src='controllers/addTweet.js'></script>
+    <script src='controllers/hashtags.js'></script>
+
+    <script src='routes/tweet.js'></script>
+    <script src='routes/tweets.js'></script>
+
+
+
+    <script>
+    EmberHandlebarsLoader.loadTemplates([ 'tweets', 'application', 'tweet', 'addTweet', 'hashtags'
+
+      ]);
+    </script>
+
+  </head>
+  <body>
+  </body>
+</html>
